@@ -2,8 +2,8 @@
 
 import hidden_4
 
-def main():
 
+def main():
 
     for name in dir(hidden_4):
         if name[:2] != "__":
