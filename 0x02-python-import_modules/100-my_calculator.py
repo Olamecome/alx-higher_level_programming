@@ -21,7 +21,7 @@ def main():
         print("Unknown operator. Available operators: +, -, * and /")
         sys.exit(1)
 
-    oper = {"+" : add, "-" : sub, "*" : mul, "/" : div}
+    oper = {"+": add, "-": sub, "*": mul, "/": div}
 
     result = oper[sys.argv[2]](int(sys.argv[1]), int(sys.argv[3]))
 
