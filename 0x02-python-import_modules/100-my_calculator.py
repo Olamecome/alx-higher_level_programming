@@ -15,11 +15,11 @@ def main():
 
     if len(sys.argv[1:]) != 3:
         print("Usage: ./100-my_calculator.py <a> <operator> <b>")
-        return (1)
+        exit(1)
 
     if (sys.argv[2] not in ["+", "-", "*", "/"]):
         print("Unknown operator. Available operators: +, -, * and /")
-        return (1)
+        exit(1)
 
     if sys.argv[2] == "+":
         result = add(int(sys.argv[1]), int(sys.argv[3]))
