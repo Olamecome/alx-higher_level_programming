@@ -1,8 +1,11 @@
 #!/usr/bin/python3
 
-if __name__ == "__main__":
-    def print_list_integer(my_list=[]):
-        """
-        Function prints items in a list
-        """
-        print("{:d}".format(i) for i in my_list)
+
+def print_list_integer(my_list=[]):
+    """
+    A function that prints all integers of a list.
+    """
+    #for i in range(len(my_list)):
+     #   print("{:d}".format(my_list[i]))
+     for i in my_list:
+        print("{:d}".format(i))
