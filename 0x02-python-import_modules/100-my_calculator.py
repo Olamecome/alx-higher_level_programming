@@ -4,7 +4,7 @@ import sys
 from calculator_1 import add, sub, div, mul
 
 
-if __name__ == "__main__":
+def main():
     """
     Calculates operation based on operands
 
@@ -21,10 +21,18 @@ if __name__ == "__main__":
         print("Unknown operator. Available operators: +, -, * and /")
         return (1)
 
-    result = add(int(sys.argv[1]), int(sys.argv[3])) if sys.argv[2] == "+"
-    else sub(int(sys.argv[1]), int(sys.argv[3])) if sys.argv[2] == "-"
-    else mul(int(sys.argv[1]), int(sys.argv[3])) if sys.argv[2] == "*"
-    else div(int(sys.argv[1]), int(sys.argv[3])) if sys.argv[2] == "/"
+    if sys.argv[2] == "+":
+        result = add(int(sys.argv[1]), int(sys.argv[3]))
+    elif sys.argv[2] == "=":
+        result = sub(int(sys.argv[1]), int(sys.argv[3]))
+    elif sys.argv[2] == "*":
+        result = mul(int(sys.argv[1]), int(sys.argv[3]))
+    elif sys.argv[2] == "/":
+        result = div(int(sys.argv[1]), int(sys.argv[3]))
 
     print("{} {} {} = {}".
           format(sys.argv[1], sys.argv[2], sys.argv[3], result))
+
+
+if __name__ == "__main__":
+    main()
