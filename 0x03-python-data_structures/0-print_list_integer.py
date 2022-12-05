@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 
-if __name__ == "__print_list_integer__":
+if __name__ == "__main__":
     def print_list_integer(my_list=[]):
         """
         Function prints items in a list
