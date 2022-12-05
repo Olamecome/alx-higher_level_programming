@@ -2,13 +2,7 @@
 
 import hidden_4
 
-
-def main():
-
-    names = dir(hidden_4)
-    for name in names:
-        print(name if name[:2] != "__")
-
-
 if __name__ == "__main__":
-    main()
+
+    for name in dir(hidden_4):
+        print(name if name[:2] != "__")
